@@ -9,3 +9,8 @@ body {
   background-color: #050505; /* Matches your dark theme */
   overflow-x: hidden;
 }
+
+.stroke-text {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+  paint-order: stroke fill;
+}

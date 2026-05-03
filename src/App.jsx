@@ -1,8 +1,12 @@
-import Hero from "./components/Hero";
-import Pricing from "./components/Pricing";
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
+import Hero from "./components/Hero";
+import HeroSection from "./components/HeroSection";
+import RoomSection from "./components/RoomSection";
+import AmenitiesSection from "./components/AmenitiesSection";
 import Testimonials from "./components/Testimonials";
+import Pricing from "./components/FoodGallery";
+import FoodGallery from "./components/FoodGallery";
 
 function App() {
   useEffect(() => {
@@ -15,12 +19,14 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-[#050505] min-h-screen selection:bg-orange-500">
+    <main className="bg-[#050505]">
       <Hero />
-      <Pricing />
+      <HeroSection />
+      <RoomSection />
+      <AmenitiesSection />
       <Testimonials />
-      {/* Testimonials go here */}
-    </div>
+      <FoodGallery />
+    </main>
   );
 }
 
